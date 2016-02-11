@@ -1,0 +1,150 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: Arial;
+}
+.columns td{
+	cursor: default;
+	font-size: 14px;
+	border: 1px solid white;
+}
+.columns td:hover{
+	border-radius: 3px;
+	background-color: #aecff4;
+	border: 1px solid #72aced;
+}
+.item{
+	border-radius: 3px;
+	line-height: 20px;
+	font-size: 12px;
+	cursor: default;
+	/*border: 1px solid white;*/
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.item:hover{
+	background-color: #aecff4;
+	/*border: 1px solid #72aced;*/
+}
+.itemdragover{
+	background-color: #aecff4;
+	border: 1px solid #72aced;
+}
+.item img{
+	height: 18px;
+	margin-right: 5px;
+	float: left;
+}
+.item td{
+	padding-right: 20px;
+}
+.item td.nopad{
+	padding: 0px;
+}
+.item td input{
+	width: 100%;
+	font-size: 12px;
+}
+.selected{
+	background-color: #72aced !important;
+	/*border: 1px solid #378ae6 !important;*/
+}
+#path{
+	position: fixed;
+	top: 0px;
+	min-height: 20px;
+	font-size: 18px;
+	background-color: white;
+}
+#path a{
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+	margin: 0px 5px;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+#info{
+	margin: 10px;
+}
+#info table{
+	margin-top: 25px;
+	border-collapse: collapse;
+}
+#contextmenu{
+	position: absolute;
+	z-index: 10000;
+	background-color: #eeeeee;
+	color: black;
+	padding: 5px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+#contextmenu div{
+	cursor: pointer;
+	padding: 2px;
+}
+#contextmenu div:hover{
+	background-color: white;
+}
+#contextmenu .separator{
+	height: 1px;
+	background-color: #808080;
+	margin: 3px;
+	padding: 0px;
+}
+#contextmenu .separator:hover{
+	background-color: #808080;
+	cursor: default;
+}
+#contextmenu .label{
+	margin: 3px;
+	padding: 0px;
+	font-weight: bold;
+}
+#contextmenu .label:hover{
+	background-color: #808080;
+	cursor: default;
+}
+#upload{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+#upload .holder{
+	width: 170px;
+	height: 25px;
+	border: 1px solid #d3d3d3;
+	padding: 3px 0px;
+	white-space: nowrap;
+}
+#upload .holder span{
+	float: left;
+	height: 100%;
+	line-height: 25px;
+	width: 17px;
+	font-size: 10px;
+	text-align: center;
+}
+#upload .holder span:hover{
+	background-color: #d3d3d3;
+	cursor: pointer;
+}
+#upload .holder p{
+	font-size: 12px;
+}
+#upload .progress{
+	display: inline-block;
+	background-color: #47b855;
+	height: 10px;
+	width: 0px;
+}
