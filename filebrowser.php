@@ -455,7 +455,7 @@ class FileBrowser{
 		$obj->AddHeader(new FolderHeader("Name","content",NULL,TRUE));
 		$obj->AddHeader(new FolderHeader("Date Modified","date"));
 		$obj->AddHeader(new FolderHeader("Size","sizeText","size"));
-		$contents = scandir($this->Path);
+		$contents = $this->scandir($this->Path);
 		for($i=0; $i<2; $i++){
 			foreach($contents as $content){
 				if($content == '.' || $content == '..'){
